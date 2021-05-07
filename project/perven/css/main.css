@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+/*초기화*/
+* { margin: 0; padding: 0; }
+ol,ul {list-style: none;}
+table{border-collapse: collapse;}
+a{text-decoration: none; color: #000; }
+
+fieldset{border: none;}
+legend{display: none; }
+input {vertical-align: middle; border: 0; }/*인풋태그 정렬*/
+.clearfix:after {content: ""; display: block; clear: both; }
+
+body{font-family: '나눔고딕';
+font-size: 16px; line-height: 26px; color: #000;}
+#wrap {overflow: hidden; min-width: 1200px; }
+
+
+
+/*헤더*/
+#header {width: 1200px; height: 100px; margin: 0 auto; position: relative; z-index: 99;}
+#header h1 {position: absolute; left: 30px; top: 20px;}
+#header .util {position: absolute; right: 30px; top: 40px; }
+#header .util li{float: left; padding-left: 20px;}
+#header .util li a {font-size: 14px; color: #666; }
+#header .gnb{position: absolute; left: 10%; top: 40px;}
+#header .gnb > li {float: left;}
+#header .gnb > li > a {display: block; padding: 0 25px 30px;}
+#header .gnb > li:hover > a {color: #9b760a; font-weight: 700; }
+
+
+#header .dp2 { background: #fff; padding: 10px 0; box-sizing: border-box; }
+#header .dp2 li a { display: block; color: #000; font-size: 14px; font-weight: normal; text-align: center;}
+#header .dp2 li a:hover { color: #9b760a; font-weight: 700;}
+
+
+
+
+/*메인배너*/
+#main_banner {position: relative; height: 580px; }
+#main_banner ul { height: 580px; }
+#main_banner .mb1{ height: 580px; background: url('../images/main/mb_01.png') no-repeat center top; }
+#main_banner .mb2{ height: 580px; background: url('../images/main/mb_02.png') no-repeat center top; }
+
+/* bxslider CSS */
+#main_banner .bx-pager { position:absolute; bottom:30px; left:50%; transform: translateX(-50%); }
+#main_banner .bx-pager-item { float:left; }
+#main_banner .bx-pager a { background:#fff;font-size: 0; display:block; width:10px; height:10px; margin:0 5px; border-radius:5px; transition:all 0.2s; }
+#main_banner .bx-pager a.active { background:#cfa364; width:30px; }
+
+
+#main_banner .bx-controls-direction a {position: absolute; top: 250px; width: 20px; height: 20px; font-size: 0; border-top: 2px solid #fff; border-left: 2px solid #fff; }
+#main_banner .bx-prev { left: 50%; transform: translateX(-800px) rotate(-45deg); }
+#main_banner .bx-next { left: 50%; transform: translateX(800px) rotate(135deg); }
+
+
+
+
+
+
+
+/*컨텐츠 배너*/
+
+#main_contents {width: 1200px; margin: 150px auto; }
+#main_contents .top .banner {height: 422px; }
+#main_contents .top .banner li {float: left; margin-right: 10px;}
+#main_contents .bottom .banner {height: 422px; }
+#main_contents .bottom .banner li {float: left; margin-right: 10px;}
+
+
+
+/*인기상품*/
+#best {width: 1050px; margin: 100px auto; height: 400px; position: relative; }
+#best h2 {text-align: center; margin-bottom: 50px; font-size: 30px;}
+
+#best .best_list {text-align: center;}
+#best .best_list li { height: 280px; }
+#best .best_list li a { display: block; }
+
+#best .bx-pager { position:absolute; bottom:-20px; left:50%; transform: translateX(-50%); }
+#best .bx-pager-item { float:left; }
+#best .bx-pager a { background:#ddd; font-size: 0; display:block; width:10px; height:10px; margin:0 5px; border-radius:5px; transition:all 0.2s; }
+#best .bx-pager a.active { background:#67625e; width:10px; }
+#best .bx-controls-direction a { position: absolute; top: 50%; width: 20px; height: 20px; font-size: 0; border-top: 1px solid #666; border-left: 1px solid #666; }
+#best .bx-prev { left: -5%; transform: rotate(-45deg) translateY(-50%); }
+#best .bx-next { right: -5%; transform: rotate(135deg) translateY(-50%); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*브랜드소개 - 비쥬얼*/
+#perven {width: 100%; margin: 150px auto; height: 400px; background: url('../images/main/visual_01.png') no-repeat center center;}
+#perven .title {text-align: center; color: #fff; padding: 150px 0;}
+#perven .title h2 {font-size: 50px; display: inline-block;}
+#perven .title .stit {margin: 20px 0 30px; font-size: 20px; }
+#perven .title .more {border: 1px solid #fff; margin-bottom: 100px; display: inline-block;}
+#perven .title .more a {font-size: 20px; color: #fff; text-align: center; display: inline-block; padding: 10px 20px;}
+
+
+
+/*신상품*/
+#new {width: 1050px; margin: 150px auto;}
+#new h2{text-align: center; margin-bottom: 50px; font-size: 30px;}
+
+#new .new_list {position: relative; margin-bottom: 50px;}
+#new .new_list li {float: left; margin-right: 180px;}
+#new .new_list li:last-child {margin-right: 0;}
+
+#new .more{ text-align: center; }
+#new .more a { font-size: 20px; border: 1px solid #666; display: inline-block; padding: 10px 20px; }
+
+
+
+/*이벤트 배너*/
+#event {width: 100%; height: 300px; margin: 0 auto; }
+#event ul li { float: left; width: 50%; }
+#event ul li:nth-child(1) { background: #e1e6ec; text-align: right; }
+#event ul li:nth-child(2) { background: #e1e1e1; text-align: left; }
+
+
+
+/*인스타그램*/
+#instargram {width: 1200px; margin: 150px auto; }
+#instargram h2 {text-align: center; font-size: 30px; margin-bottom: 20px;}
+#instargram p {text-align: center; margin-bottom: 20px;}
+
+#instargram .top, #instargram .bottom{margin-left: 80px;}
+#instargram .top li {float: left; }
+#instargram .bottom li {float: left; }
+
+
+/*푸터 - top*/
+
+#footer .footer_top {background: #f6f6f6; border-top: 1px solid #cdcdcd; }
+#footer .ftop_inner {width: 1200px; margin: 0px auto; height: 220px; padding: 50px 0; box-sizing: border-box;}
+#footer .ftop_inner .cs, #footer .ftop_inner .bank, #footer .ftop_inner .return {float: left; margin-right: 50px; }
+#footer .ftop_inner dt {font-weight: bold; font-size: 20px; padding-bottom: 20px;}
+#footer .ftop_inner dd {font-size: 14px; }
+
+
+
+/*푸터 - 검색*/
+#footer form {display: inline-block; border: 1px solid #b5b5b5; margin-left: 120px;}
+#footer input { background: #fff; height: 35px; color: #000; padding: 10px; box-sizing: border-box; }
+#footer input[type="text"] { width: 180px; background: #fff }
+#footer input[type="submit"] { font-size: 0; background: #fff url('../images/main/search.png') no-repeat center center; width: 50px; cursor: pointer; }
+
+
+/*푸터 - bottom*/
+#footer .footer_bottom {background: #f6f6f6; border-top: 1px solid #cdcdcd; }
+#footer .fb_inner {width: 1200px; margin: 0 auto; height: 220px; padding: 50px 0; box-sizing: border-box; position: relative; font-size: 12px;}
+#footer .footer_logo {position: absolute; top: 50px; left: 0;}
+#footer .address {position: absolute; top: 50; left: 200px; }
+
+#footer .address ul li {float: left; margin-right: 10px;}
+#footer .address ul li a{font-weight: bold}
+
+
+

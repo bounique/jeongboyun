@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graphic Design (정보윤)</title>
+    <style>
+        @keyframes view_on {
+            0% { background: rgba(0,0,0,0.5); color: #000;}
+            50% { background: #8bb2dc; color: #fff}
+            100% { background: rgba(0,0,0,0.5); color: #000;}
+        }
+        html { scroll-behavior: smooth; }
+        body { margin: 0; padding: 0; overflow-x: hidden; background: #fff; min-width: 320px; }
+        #wrap { width: 70%; margin: 0 auto; }
+        img { display: block; width: 100%; }
+        .btn { position: fixed; right: 15%; bottom: 0; transform: translateX(60px); }
+        .btn a { text-decoration: none; color: #000; display: block; width: 60px; padding: 20px 0; text-align: center; }
+        .btn a.view { background: rgba(0,0,0,0.5); font-size: 16px; animation: view_on 3s infinite; font-weight: 700; }
+        .btn a.gotop { background: rgba(0,0,0,0.1); color: #999; font-weight: 700; }
+        .btn a.gotop:hover {color: #000;}
+    </style>
+</head>
+
+<body>
+    <a name="top"></a>
+    <div id="wrap">
+        <div class="btn"><a href="#top" class="gotop">↑</a></div>
+        <img src="img/portfolio/graphic.png" alt="그래픽 디자인">
+    </div>
+</body>
+</html>
